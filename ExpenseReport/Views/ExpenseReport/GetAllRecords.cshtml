@@ -15,6 +15,12 @@
             $(".hide").on("click", function(){
                 $(".hidefilter").slideToggle(1000);
             })
+            if(@Model.Balance>0){
+                $(".BAL").addClass("text-success")
+            }
+            else{
+                $(".BAL").addClass("text-danger")
+            }
         })
     </script>
 }
@@ -28,7 +34,7 @@
         <tr>
             <td>Total Income: <span class="TINC">₹@Model.TotalIncome</span></td>
             <td>Total Expense: <span class="TEXP">₹@Model.TotalExpense</span></td>
-            <td>Balance: ₹@Model.Balance</td>
+            <td>Balance: <span class="BAL">₹@Model.Balance</span></td>
         </tr>
     </table>    
 
@@ -70,7 +76,7 @@
                 <td class="@item.Type">₹@item.Amount</td>
                 <td>@item.Date.Date.ToShortDateString()</td>
                 <td><a class="btn btn-outline-secondary" asp-action="UpdateRecord" asp-route-id="@item.Id">Edit</a></td>
-                <td><a class="btn btn-outline-danger" asp-action="DeleteRecord" asp-route-id="@item.Id">Delete</a></td>                
+                <td><a class="btn btn-outline-danger" asp-action="DeleteRecord" asp-route-id="@item.Id" onclick="return confirm('Are you sure to delete record?')">Delete</a></td>
             </tr>
         }
     </table>
