@@ -1,0 +1,77 @@
+﻿
+@model ExpenseReportViewModel
+
+@{
+    ViewData["Title"] = "GetAllRecords";
+}
+
+@section Scripts{
+    <script>
+        $(document).ready(function(){
+            $(".EXP").addClass("text-danger").prepend("-")
+            $(".INC").addClass("text-success").prepend("+")
+            $(".TEXP").addClass("text-danger")
+            $(".TINC").addClass("text-success")
+            $(".hide").on("click", function(){
+                $(".hidefilter").slideToggle(1000);
+            })
+        })
+    </script>
+}
+
+<h1>ExpenseReport</h1>
+
+<div>
+    <p><a class="btn btn-outline-secondary" asp-action="AddRecord">Add Record</a></p>
+
+    <table class="table table-bordered table-info w-50">
+        <tr>
+            <td>Total Income: <span class="TINC">₹@Model.TotalIncome</span></td>
+            <td>Total Expense: <span class="TEXP">₹@Model.TotalExpense</span></td>
+            <td>Balance: ₹@Model.Balance</td>
+        </tr>
+    </table>    
+
+    <div class="border w-50" style="padding:10px">
+        <div><h5>Filters<span style="float:right"><button class="btn btn-close hide"></button></span></h5></div>
+        <form asp-action="GetRecordsByType" class="hidefilter">
+            <table>
+                <tr>                    
+                    <td style="padding:5px">
+                        <select asp-for="@Model.Type" class="form-select">
+                            <option value="">--Select Type--</option>
+                            <option value="EXP">Expense</option>
+                            <option value="INC">Income</option>
+                        </select>
+                    </td>
+                    <td style="padding:5px">
+                        <input type="date" asp-for="@Model.Date" class="form-control" />
+                    </td>
+                    <td style="padding:5px">
+                        <input type="submit" value="Apply" class="btn btn-outline-secondary" />
+                    </td>
+                </tr>
+            </table>            
+        </form>
+    </div>
+    <br />
+    <table class="table table-bordered w-50">
+        <tr>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Edit</th>
+            <th>Delete</th>            
+        </tr>
+        @foreach(var item in Model.reportMasters)
+        {
+            <tr>
+                <td>@item.Description</td>
+                <td class="@item.Type">₹@item.Amount</td>
+                <td>@item.Date.Date.ToShortDateString()</td>
+                <td><a class="btn btn-outline-secondary" asp-action="UpdateRecord" asp-route-id="@item.Id">Edit</a></td>
+                <td><a class="btn btn-outline-danger" asp-action="DeleteRecord" asp-route-id="@item.Id">Delete</a></td>                
+            </tr>
+        }
+    </table>
+</div>

@@ -1,0 +1,51 @@
+﻿
+@model ExpenseReportMaster
+
+@{
+    ViewData["Title"] = "AddRecord";
+}
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $("input[type='text']").addClass("form-control")
+            $("input[type='date']").addClass("form-control")
+            $("select").addClass("form-select")           
+        })
+
+    </script>
+}
+
+<h1>Add Record</h1>
+
+<div>
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <form asp-action="AddRecord" method="post">
+        <table class="table table-bordered w-25">
+            <tr>
+                <th>Description</th>
+                <td><input type="text" asp-for="@Model.Description" /></td>
+            </tr>
+            <tr>
+                <th>Amount<span class="text-danger">*</span></th>
+                <td><input type="text" asp-for="@Model.Amount" /></td>
+            </tr>
+            <tr>
+                <th>Type<span class="text-danger">*</span></th>
+                <td>
+                    <select asp-for="@Model.Type">
+                        <option value="">--Select Type--</option>
+                        <option value="EXP">Expence</option>
+                        <option value="INC">Income</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td><input type="date" asp-for="@Model.Date" /></td>
+            </tr>
+            
+        </table>
+        <input type="submit" value="Add" class="btn btn-outline-secondary" />
+    </form>    
+</div>
