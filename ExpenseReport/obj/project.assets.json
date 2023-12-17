@@ -11283,11 +11283,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kate\\OneDrive\\Desktop\\ExpenseReport\\ExpenseReportApp\\ExpenseReport\\ExpenseReport.csproj",
+      "projectUniqueName": "C:\\Users\\Kate\\OneDrive\\Desktop\\MVC\\ExpenseReport\\ExpenseReport\\ExpenseReport.csproj",
       "projectName": "ExpenseReport",
-      "projectPath": "C:\\Users\\Kate\\OneDrive\\Desktop\\ExpenseReport\\ExpenseReportApp\\ExpenseReport\\ExpenseReport.csproj",
+      "projectPath": "C:\\Users\\Kate\\OneDrive\\Desktop\\MVC\\ExpenseReport\\ExpenseReport\\ExpenseReport.csproj",
       "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kate\\OneDrive\\Desktop\\ExpenseReport\\ExpenseReportApp\\ExpenseReport\\obj\\",
+      "outputPath": "C:\\Users\\Kate\\OneDrive\\Desktop\\MVC\\ExpenseReport\\ExpenseReport\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kate\\AppData\\Roaming\\NuGet\\NuGet.Config",
