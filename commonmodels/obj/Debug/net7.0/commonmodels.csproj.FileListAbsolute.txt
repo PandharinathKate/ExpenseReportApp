@@ -1,0 +1,12 @@
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\bin\Debug\net7.0\commonmodels.deps.json
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\bin\Debug\net7.0\commonmodels.dll
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\bin\Debug\net7.0\commonmodels.pdb
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\obj\Debug\net7.0\commonmodels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\obj\Debug\net7.0\commonmodels.AssemblyInfoInputs.cache
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\obj\Debug\net7.0\commonmodels.AssemblyInfo.cs
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\obj\Debug\net7.0\commonmodels.csproj.CoreCompileInputs.cache
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\obj\Debug\net7.0\commonmodels.sourcelink.json
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\obj\Debug\net7.0\commonmodels.dll
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\obj\Debug\net7.0\refint\commonmodels.dll
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\obj\Debug\net7.0\commonmodels.pdb
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\commonmodels\obj\Debug\net7.0\ref\commonmodels.dll

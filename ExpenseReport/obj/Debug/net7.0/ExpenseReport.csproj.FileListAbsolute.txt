@@ -504,3 +504,4 @@ C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\ExpenseReport\obj\
 C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\ExpenseReport\obj\Debug\net7.0\ExpenseReport.pdb
 C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\ExpenseReport\obj\Debug\net7.0\ExpenseReport.genruntimeconfig.cache
 C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\ExpenseReport\obj\Debug\net7.0\ref\ExpenseReport.dll
+C:\Users\Kate\OneDrive\Desktop\ExpenseReport\ExpenseReportApp\ExpenseReport\obj\Debug\net7.0\ExpenseReport.sourcelink.json
